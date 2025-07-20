@@ -1,0 +1,79 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid #0d6efd;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: '✔ ';
+  color: #0d6efd;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #212529;
+}
+
+footer p {
+  margin: 0;
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+.animate-fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.animate-fade-in.show {
+  opacity: 1;
+}
+.animate-slide-in {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+.animate-slide-in.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Social Media Icons */
+#contact p a i {
+  margin-right: 8px;
+  color: #0d6efd;
+  transition: color 0.3s;
+}
+#contact p a:hover i {
+  color: #0056b3;
+}
